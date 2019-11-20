@@ -1,0 +1,155 @@
+<html>
+    <head>
+        
+        <!-- css reset -->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        
+        <!-- css style -->
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+         <link href="css/gallery.css" rel="stylesheet" type="text/css">
+        
+        
+     <!-- web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+        <!--W3 framework-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body>
+        
+                <button style = "color:black" class="w3-button w3-clear w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+
+<!-- sidebar     -->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  
+<a href="index.html" class="w3-bar-item w3-button">LEON</a>
+ <a href="menu02.html" class="w3-bar-item w3-button">BIO</a>
+  <a href="menu03.html" class="w3-bar-item w3-button" style = "font-weight: bold;">MUSIC</a>
+  <a href="menu04.html" class="w3-bar-item w3-button">TOURS</a>               
+</div>
+        
+    
+<h1 style = "margin-bottom:0px; margin-left:50px; font-weight: bolder; font-size: 40px">GALLERY</h1>    
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/GoodThing.jpg" style="width:100%; height: 100%">
+    <div class="text">Good Thing is the second studio album by American singer Leon Bridges. It was released on May 4, 2018, by Columbia Records.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/cominghome.jpg" style="width:100%; height: 100%">
+    <div class="text">Coming Home by Leon Bridges was released on June 23, 2015, by Columbia Records. The album was written by Leon Bridges, Austin Michael Jenkins, Joshua Block, Chris Vivion and produced by Niles City Sound.</div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">3/ 6</div>
+    <img src="images/hotgames.jpg" style="width:100%; height: 100%">
+    <div class="text">Hot Games music was Leon Bridges very first album produced. It was released in 2013.</div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/5.jpg" style="width:100%; height: 100%">
+    <div class="text">Bridges's style is primarily soul, but resembling 1960s rhythm and blues.The Wall Street Journal described him as a "throwback to '60s-soul a la Otis Redding and Sam Cooke. </div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/9.jpg" style="width:100%; height: 100%">
+    <div class="text"> Brittni Jessie headlined with Leon Bridges at Edmonton’s Folk Music Festival in 2019. She also made an appearance in Leon's well-known song, and music video, "River." </div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/11.jpg" style="width:100%; height: 100%">
+    <div class="text">Leon has had many of his songs featured on television. For example, in 2017 when "River" was played in the first season of the HBO series Big Little Lies. Also, the song "Better Man" was featured in the 2018 film Pacific Rim: Uprising.</div>
+  </div>
+    
+    
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+</div>
+        
+        
+        
+                    
+<script>
+        
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+    
+    
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>   
+        
+    
+        
+    <footer class="footer" style="text-align: center">
+        
+    <a href="https://www.facebook.com/LeonBridgesOfficial/">
+    <img class= "socialmedia" src="images/facebook.png" alt="Facebook" >
+    </a>   
+        
+     <a href="https://www.instagram.com/leonbridgesofficial/?hl=en"> <img class= "socialmedia" src="images/instagram.png" alt="instagramk" >
+    </a>    
+        
+    <a href="https://twitter.com/leonbridges?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img class= "socialmedia" src="images/twitter.png" alt="instagramk" >
+    </a> 
+        
+    </footer> 
+        
+        
+    </body>
+
+
+</html>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        
+        <!-- css reset -->
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+
+<!-- css style -->
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+<!-- web fonts -->
+<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+        
+<!--W3 framework-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+    </head>
+
+    <body>
+        
+<!--sidebar button-->
+<button style = "color:white" class="w3-button w3-clear w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+
+<!-- sidebar     -->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  
+<a href="index.html" class="w3-bar-item w3-button" style = "font-weight: bold;">LEON</a>
+ <a href="menu02.html" class="w3-bar-item w3-button">BIO</a>
+  <a href="menu03.html" class="w3-bar-item w3-button">MUSIC</a>
+  <a href="menu04.html" class="w3-bar-item w3-button">TOURS</a>               
+</div>
+        
+        
+<img id="full_screen" src="images/bluebackground.jpg" alt="Leon_Home">
+      
+<img id="shakeimg" src="images/leon_title.png" alt="Leon_BIO">
+                      
+            
+            
+<script>
+        
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>   
+            
+        
+        
+        
+       <!-- end container -->
+    
+    </body>
+
+
+</html>

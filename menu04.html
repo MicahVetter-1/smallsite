@@ -1,0 +1,114 @@
+<html>
+    <head>
+        
+        <!-- css reset -->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        
+        <!-- css style -->
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+       
+        
+        <!-- web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+        <!--W3 framework-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body>
+        
+        
+        <button style = "color:black" class="w3-button w3-clear w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+
+<!-- sidebar     -->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  
+<a href="index.html" class="w3-bar-item w3-button">LEON</a>
+ <a href="menu02.html" class="w3-bar-item w3-button">BIO</a>
+  <a href="menu03.html" class="w3-bar-item w3-button">MUSIC</a>
+  <a href="menu04.html" class="w3-bar-item w3-button" style = "font-weight: bold;">TOURS</a>               
+</div>
+        
+        <div class="container">
+     
+           
+                
+            <div class="grid-container">
+                
+           <div id="Tour_Header">
+                
+                <h1 class="h1">SHOWS</h1>
+            </div>
+               
+            <div class="shows">
+                
+                <p>Leon Bridges has ben performing since his early college years. In 2014 his career began to pick up speed. He released his first album and consiquently also began performing infront of larger audiences.Since then Leon has perfomed on many stages infront of a variety of audiences. Although his career is still young, his perfomances have had a lasting impact. People across the country who have seen him perform attest to the fact that his shows will leave you jaw-dropped.
+                
+            </p>
+            </div>
+                
+           <div class="shows2">
+                
+                <p>2019 Tour Tickets are still being sold. Buy your ticket today.
+                
+            </p>
+            </div>
+            
+             <a id="button" href="https://www.leonbridges.com/tour"> <img src="images/GO.png" alt="go button" style="width:60px;height:30px;border:0;">
+    </a>    
+            <div class="video_wrapper">
+               
+            <div class="box">
+            <img src="images/box.png" alt="box">
+            </div>
+                   
+            <div>
+            <video id="record" autoplay muted loop width="600"controls>
+            <source src="images/recordvid.mp4"  type="video/mp4"></video>
+            </div>
+              
+            </div>
+                
+             <div class="timeline">
+            <img class="timeline" src="images/timeline.png" alt="timeline">
+            </div> 
+                
+            </div><!-- --end grid-container -->
+            
+            
+            
+                </div>
+              
+                
+                
+            
+            
+               
+    
+            
+            
+            
+            
+            
+            
+        
+        
+            
+      
+        
+        
+                    
+<script>
+        
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>   
+    </body>
+
+
+</html>
